@@ -1,9 +1,7 @@
-
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Star, Users, Store, ShieldCheck, MapPin, TrendingUp, Award, Globe, ArrowRight } from "lucide-react";
+import { Star, Users, Store, ShieldCheck, MapPin, TrendingUp, Globe, ArrowRight } from "lucide-react";
 import LoginForm from "@/components/auth/LoginForm";
 import SignupForm from "@/components/auth/SignupForm";
 import { useAuthStore } from "@/store/authStore";
@@ -64,11 +62,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      {/* Enhanced Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5" />
-        
-        {/* Floating Elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-purple-200 rounded-full opacity-20 animate-pulse delay-1000"></div>
         <div className="absolute bottom-40 left-20 w-12 h-12 bg-green-200 rounded-full opacity-20 animate-pulse delay-500"></div>
@@ -93,7 +88,6 @@ const Index = () => {
               Connect with thousands of stores across India, share authentic experiences, and help fellow shoppers make informed decisions with our comprehensive rating ecosystem.
             </p>
 
-            {/* Stats Row */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
               {stats.map((stat, index) => (
                 <div key={index} className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
@@ -105,7 +99,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Enhanced Features Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {features.map((feature, index) => (
               <div key={index} className="group bg-white/70 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/90 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
@@ -124,11 +117,9 @@ const Index = () => {
             ))}
           </div>
 
-          {/* Enhanced Auth Section */}
           <div className="max-w-md mx-auto">
             <Card className="backdrop-blur-xl bg-white/95 border-white/20 shadow-2xl rounded-3xl overflow-hidden">
               <div className="h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500"></div>
-              
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Get Started
@@ -137,7 +128,6 @@ const Index = () => {
                   Join our community of store reviewers
                 </CardDescription>
               </CardHeader>
-              
               <CardContent className="px-8">
                 <Tabs defaultValue="login" className="w-full">
                   <TabsList className="grid w-full grid-cols-2 mb-8 bg-gray-100 p-1 rounded-xl">
@@ -154,17 +144,14 @@ const Index = () => {
                       Sign Up
                     </TabsTrigger>
                   </TabsList>
-                  
                   <TabsContent value="login" className="space-y-0">
                     <LoginForm />
                   </TabsContent>
-                  
                   <TabsContent value="signup" className="space-y-0">
                     <SignupForm />
                   </TabsContent>
                 </Tabs>
               </CardContent>
-              
               <CardFooter className="text-center text-sm text-gray-500 px-8 pb-8">
                 <p>Trusted by thousands of users across India</p>
               </CardFooter>
