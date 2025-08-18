@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -127,7 +126,6 @@ const LoginForm = () => {
         </Button>
       </form>
       
-      {/* Enhanced Demo Credentials */}
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-5 rounded-xl border-2 border-blue-100">
         <div className="text-center mb-4">
           <Badge variant="secondary" className="bg-blue-100 text-blue-800 px-3 py-1">
